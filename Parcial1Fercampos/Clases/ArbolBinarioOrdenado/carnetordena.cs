@@ -1,14 +1,17 @@
-﻿using Parcial1Fercampos.Clases.ArbolBinarioOrdenado;
+﻿using CLASE3_ARBOLES.Clases.ArbolBinarioOrdenado;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace CLASE3_ARBOLES.Clases.ArbolBinarioOrdenado
+namespace Parcial1Fercampos.Clases.ArbolBinarioOrdenado
 {
-    public class Estudiante : Comparador
+    public class carnetordena : Comparador
     {
-        public string estudiante;
-        public string descripcion;
+        public int numero;
+        public string carnet;
+        public string descrip;
         public bool igualQue(object q)
         {
             //para la busqueda
@@ -21,32 +24,32 @@ namespace CLASE3_ARBOLES.Clases.ArbolBinarioOrdenado
         {
             //SoloNumeros p2 = (SoloNumeros)q;
             //return numero >= p2.numero;
-            Estudiante p2 = (Estudiante)q;
-            return estudiante.CompareTo(p2.estudiante) >= 0;
+            carnetordena p2 = (carnetordena)q;
+            return carnet.CompareTo(p2.carnet) >= 0;
         }
 
         public bool mayorQue(object q)
         {
             //SoloNumeros p2 = (SoloNumeros)q;
             //return numero > p2.numero;
-            Estudiante p2 = (Estudiante)q;
-            return estudiante.CompareTo(p2.estudiante) > 0;
+            carnetordena p2 = (carnetordena)q;
+            return carnet.CompareTo(p2.carnet) > 0;
         }
 
         public bool menorigualQue(object q)
         {
             //SoloNumeros p2 = (SoloNumeros)q;
             //return numero <= p2.numero;
-            Estudiante p2 = (Estudiante)q;
-            return estudiante.CompareTo(p2.estudiante) <= 0;
+            carnetordena p2 = (carnetordena)q;
+            return carnet.CompareTo(p2.carnet) <= 0;
         }
 
         public bool menorQue(object q)
         {
             //SoloNumeros p2 = (SoloNumeros)q;
             //return numero < p2.numero;
-            Estudiante p2 = (Estudiante)q;
-            return estudiante.CompareTo(p2.estudiante) < 0;
+            carnetordena p2 = (carnetordena)q;
+            return carnet.CompareTo(p2.carnet) < 0;
         }
     }
 }

@@ -7,6 +7,9 @@ using CLASE3_ARBOLES.Clases.ArbolBinario;
 using CLASE3_ARBOLES.Clases.JuegoAnimal;
 using System.Collections;
 using Parcial1Fercampos.Clases.BaseDatos;
+using Parcial1Fercampos.Clases.ArbolBinarioOrdenado;
+using CLASE3_ARBOLES.Clases.ArbolBinarioOrdenado;
+using Parcial1Fercampos.Clases.clasesmain;
 
 namespace Parcial1Fercampos
 {
@@ -122,10 +125,75 @@ namespace Parcial1Fercampos
             } while (otrojuego);
         }
 
+        public static void pruebaOrden()
+        {
+            ArbolBinarioBusqueda ArBus = new ArbolBinarioBusqueda();
+            int[] datos = { 30, 5, 2, 40, 36, 85 };
+            SoloNumeros es = new SoloNumeros();
+            foreach (int d in datos)
+            {
+                es.numero = d;
+                es.descripcion = $"insertar No.{d}";
+                ArBus.insertar(es);
+                es = new SoloNumeros();
+            }
+            int pausa;
+            pausa = 0;
+            es = new SoloNumeros();
+            es.numero = 36;
+            es.descripcion = "cualquier cosa";
+            ArBus.eliminar(es);
+            pausa = 0;
+
+        }
+
+        //public static void ordenanombre()
+        //{
+        //    ArbolBinarioBusqueda ArBus = new ArbolBinarioBusqueda();
+        //    string[] nombres = { "jose", "luis", "adrian", "bartolome" };
+        //    Estudiante es = new Estudiante();
+        //    foreach (string d in nombres)
+        //    {
+        //        es.estudiante = d;
+        //        es.descripcion = $"insertar Nombre.{d}";
+        //        ArBus.insertar(es);
+        //        es = new Estudiante();
+        //    }
+        //    int pausa;
+        //    pausa = 0;
+        //    es = new Estudiante();
+           
+        //}
+
+        //public static void ordenacarnet()
+        //{
+        //    ArbolBinarioBusqueda ArBus = new ArbolBinarioBusqueda();
+        //    string[] carnet = { "0905-19-52517", "0905-19-62517", "0905-19-42517", "0905-19-32517" };
+        //    carnetordena carne = new carnetordena();
+        //    foreach (string d in carnet)
+        //    {
+        //        carne.carnet = d;
+        //        carne.descrip = $"insertar carnet.{d}";
+        //        ArBus.insertar(carne);
+        //        carne = new carnetordena();
+        //    }
+        //    int pausa;
+        //    pausa = 0;
+        //    carne = new carnetordena();
+            
+        //}
 
         static void Main(string[] args)
         {
-            juegoAnimales(); 
+            ordenarboles arbol = new ordenarboles();
+            //juegoAnimales();
+
+
+            //arbol.ordenanombre();
+            arbol.ordenacarnet();
+
+
+            //pruebaOrden();
             //AdivinaAnimal listar = new AdivinaAnimal();
             //listar.cargadbimprimiendo();
             //Console.ReadLine();

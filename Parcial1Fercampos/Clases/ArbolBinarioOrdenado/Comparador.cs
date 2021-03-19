@@ -4,12 +4,13 @@ using System.Text;
 
 namespace CLASE3_ARBOLES.Clases.ArbolBinarioOrdenado
 {
-    interface Comparador
+    public interface Comparador
     {
         bool igualQue(Object q);
+        bool menorQue(Object q);
         bool menorigualQue(Object q);
-        bool mayorQue(object q);
         bool mayorigualQue(Object q);
+        bool mayorQue(object q);
 
     }
 }

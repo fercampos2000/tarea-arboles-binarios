@@ -44,12 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ArbolBinarioOrdenado\ArbolBinarioBusqueda.cs" />
+    <Compile Include="Clases\ArbolBinarioOrdenado\carnetordena.cs" />
     <Compile Include="Clases\ArbolBinarioOrdenado\Comparador.cs" />
     <Compile Include="Clases\ArbolBinarioOrdenado\Estudiante.cs" />
+    <Compile Include="Clases\ArbolBinarioOrdenado\SoloNumeros.cs" />
     <Compile Include="Clases\ArbolBinario\ArbolBinario.cs" />
     <Compile Include="Clases\ArbolBinario\Nodo.cs" />
     <Compile Include="Clases\BaseDatos\clsConexión.cs" />
     <Compile Include="Clases\BaseDatos\Listardatos.cs" />
+    <Compile Include="Clases\clasesmain\ordenarboles.cs" />
     <Compile Include="JuegoAnimal\AdivinaAnimal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
